@@ -1,0 +1,8 @@
+CREATE TABLE `user` (
+  id BIGINT AUTO_INCREMENT,
+  username VARCHAR(128) NOT NULL,
+  password VARCHAR(256) NOT NULL,
+  admin_flag BOOLEAN NOT NULL DEFAULT FALSE,
+  PRIMARY KEY (id),
+  UNIQUE KEY (username)
+);
